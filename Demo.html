@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Demo</title>
+	<script type="text/javascript">
+	var Value1 = window.prompt("Enter 1st Value ");
+	var Value2 = window.prompt("Enter 2nd Value ");
+	
+	Value1 = parseFloat(Value1);
+	Value2 = parseFloat(Value2);
+
+	let Add = Value1+Value2;
+	let sub = Value1-Value2;
+	let mul = Value1*Value2;
+	if(Value2 == 0){
+		div = "Not Divide By Zero";
+	}else{
+		let div = Value1/Value2;	
+	}
+	
+	let mod = Value1%Value2;
+	alert("Addition: "+Add + "\n" + "Subtraction: " + sub +"\n" + "Multiplication: " + mul + "\n" + "Division: " + div + "\n" + "modulo: " + mod);
+	
+	</script>
+
+</head>
+<body>
+
+<input type="text" placeholder="Enter text" onblur="getVal()">
+</body>
+</html>
